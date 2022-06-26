@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONT GOOGLE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Karen Vardanian</title>
     <!-- FONT AWESOME -->
     <script
@@ -20,234 +23,198 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-
     <div class="container">
-        <!-- HEADER -->
-        <header class="header">
-            <!-- NAV -->
-            <nav class="nav">
-                <div class="nav_items">
-                    <ul class="nav__ul">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About me</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Education</a></li>
-                        <li><a href="">Contacts</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- TITLE -->
-                <!-- name -->
-            <div class="header__title">
-                <div class="header__title--title title">
-                    Karen <br>Vardanian
-                </div>
-                <!-- about -->
-                <div class="header__title--subtitle subtitle">
-                    <p>Web Developer</p>
-                    <p>33 years old, Moscow</p>
-                </div>
-                <!-- switch-->
-                <div class="header__title--switch subtitle">
-                    <div class="switch--language">
-                        ENG | RU
-                    </div>
-                    <div class="switch--nightmod">
-                        night | day
-                    </div>
-                </div>
+      <!-- HEADER -->
+      <header class="header">
+        <!-- NAV -->
+        <nav class="nav">
+          <div class="nav_items nav__ul">
+            <a id="home">Home</a>
+            <a id="about">About me</a>
+            <a id="skills">Skills</a>
+            <a id="portfolio">Portfolio</a>
+            <a id="education">Education</a>
+            <a id="contacts">Contacts</a>
+          </div>
+        </nav>
+        <!-- TITLE -->
+        <!-- name -->
+        <div class="header__title">
+          <div class="header__title--title title">Karen <br />Vardanian</div>
+          <!-- about -->
+          <div class="header__title--subtitle subtitle">
+            <p>Web Developer</p>
+            <p>33 years old, Moscow</p>
+          </div>
+          <!-- switch-->
+          <div class="header__title--switch subtitle">
+            <div class="switch--language">
+                 ENG | RU
             </div>
-            <!-- IMG -->
-            <div class="header__img">
-                <img src="img/BSPP2266.png" alt="Photo">
+            <div class="switch--nightmod"> 
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="button"></label>
             </div>
-            
-        </header>
-        
-        <!-- ABOUT ME -->
-        <div class="aboutme">
-            <div class="aboutme__title title">
-                About me
-            </div>
+          </div>
+        </div>
+        <!-- IMG -->
+        <div class="header__img">
+          <img src="img/BSPP2266.png" alt="Photo" />
+        </div>
+      </header>
 
-            <div class="aboutme__subtitle-1 subtitle">
-                <p>
-                    Hi, i'm Karen - Web Developer from Moscow.
-                </p>
-                <p>
-                    i'm interested in web developer and everything connected with it.
-                </p>
-            </div>
+      <!-- ABOUT ME -->
+      <div class="aboutme">
+        <div class="aboutme__title title">About me</div>
 
-            <div class="aboutme__subtitle-1 subtitle">
-                <p>
-                    I took web development courses 
-                </p>
-                <p>
-                    and continue my education and development.
-                </p>
-            </div>
-
-            <div class="aboutme__subtitle-1 subtitle">
-                <p>
-                    Ready to implement excellent projects 
-                </p>
-                <p>
-                    with wonderful people.
-                </p>
-            </div>
+        <div class="aboutme__subtitle-1 subtitle">
+          <p>Hi, i'm Karen - Web Developer from Moscow.</p>
+          <p>
+            i'm interested in web developer and everything connected with it.
+          </p>
         </div>
 
-        <!-- SKILLS -->
-        <div class="skills">
-
-            <div class="skills__title title">
-                Skills
-            </div>  
-            <div class="skills__subtitle subtitle">
-                I work in such programs as
-            </div>
-            <!-- programs -->
-
-            <div class="skills__programs">
-
-                <div class="skills__programs--items">
-                    <div class="item-img">
-                        <img src="img/html.svg" alt="html">
-                    </div>
-                    <div class="item-title">
-                        Html
-                    </div>
-                </div>
-
-                <div class="skills__programs--items">
-                    <div class="item-img">
-                        <img src="img/css.svg" alt="html">
-                    </div>
-                    <div class="item-title">
-                        CSS
-                    </div>
-                </div>
-
-                <div class="skills__programs--items">
-                    <div class="item-img">
-                        <img src="img/js.svg" alt="html">
-                    </div>
-                    <div class="item-title">
-                       JavaScript
-                    </div>
-                </div>
-
-                <div class="skills__programs--items">
-                    <div class="item-img">
-                        <img src="img/bootstrap.svg" alt="html">
-                    </div>
-                    <div class="item-title">
-                        Bootstrap
-                    </div>
-                </div>
-
-                <div class="skills__programs--items">
-                    <div class="item-img">
-                        <img src="img/icons8-figma-96.svg" alt="html">
-                    </div>
-                    <div class="item-title">
-                        FIGMA
-                    </div>
-                </div>
-
-                <div class="skills__programs--items">
-                    <div class="item-img">
-                        <img src="img/photoshop.svg" alt="html">
-                    </div>
-                    <div class="item-title">
-                        Photoshop
-                    </div>
-                </div>
-                
-                
-            </div>
-
+        <div class="aboutme__subtitle-1 subtitle">
+          <p>I took web development courses</p>
+          <p>and continue my education and development.</p>
         </div>
 
-        <!-- PORTFOLIO -->
-        <div class="portfolio">
-            <div class="portfolio__title title">
-                Portfolio
-            </div>
-            <!-- portfolio 1 -->
-            <div class="portfolio__items">
-                <div class="portfolio__items--img">
-                    <img src="img/port1.png" alt="portfolio">
-                </div>
-                <a href="" class="portfolio--link subtitle">link portfolio</a>
-            </div>
-            <!-- portfolio 2 -->
-            <div class="portfolio__items">
-                <div class="portfolio__items--img">
-                    <img src="img/port2.png" alt="portfolio">
-                </div>
-                <a href="" class="portfolio--link subtitle">link portfolio</a>
-            </div>
-            <!-- portfolio 3 -->
-            <div class="portfolio__items">
-                <div class="portfolio__items--img">
-                    <img src="img/port3.png" alt="portfolio">
-                </div>
-                <a href="" class="portfolio--link subtitle">link portfolio</a>
-            </div>
+        <div class="aboutme__subtitle-1 subtitle">
+          <p>Ready to implement excellent projects</p>
+          <p>with wonderful people.</p>
+        </div>
+      </div>
 
+      <!-- SKILLS -->
+      <div class="skills">
+        <div class="skills__title title">Skills</div>
+        <div class="skills__subtitle subtitle">I work in such programs as</div>
+        <!-- programs -->
+
+        <div class="skills__programs">
+          <div class="skills__programs--items">
+            <div class="item-img">
+              <img src="img/html.svg" alt="html" />
+            </div>
+            <div class="item-title">Html</div>
+          </div>
+
+          <div class="skills__programs--items">
+            <div class="item-img">
+              <img src="img/css.svg" alt="html" />
+            </div>
+            <div class="item-title">CSS</div>
+          </div>
+
+          <div class="skills__programs--items">
+            <div class="item-img">
+              <img src="img/js.svg" alt="html" />
+            </div>
+            <div class="item-title">JavaScript</div>
+          </div>
+
+          <div class="skills__programs--items">
+            <div class="item-img">
+              <img src="img/bootstrap.svg" alt="html" />
+            </div>
+            <div class="item-title">Bootstrap</div>
+          </div>
+
+          <div class="skills__programs--items">
+            <div class="item-img">
+              <img src="img/icons8-figma-96.svg" alt="html" />
+            </div>
+            <div class="item-title">FIGMA</div>
+          </div>
+
+          <div class="skills__programs--items">
+            <div class="item-img">
+              <img src="img/photoshop.svg" alt="html" />
+            </div>
+            <div class="item-title">Photoshop</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTFOLIO -->
+      <div class="portfolio">
+        <div class="portfolio__title title">Portfolio</div>
+        <!-- portfolio 1 -->
+        <div class="portfolio__items">
+          <div class="portfolio__items--img">
+            <img src="img/port1.png" alt="portfolio" />
+          </div>
+          <a href="" class="portfolio--link subtitle">link portfolio</a>
+        </div>
+        <!-- portfolio 2 -->
+        <div class="portfolio__items">
+          <div class="portfolio__items--img">
+            <img src="img/port2.png" alt="portfolio" />
+          </div>
+          <a href="" class="portfolio--link subtitle">link portfolio</a>
+        </div>
+        <!-- portfolio 3 -->
+        <div class="portfolio__items">
+          <div class="portfolio__items--img">
+            <img src="img/port3.png" alt="portfolio" />
+          </div>
+          <a href="" class="portfolio--link subtitle">link portfolio</a>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+
+      <div class="education">
+        <div class="education__title title">Education</div>
+        <div class="education__items">
+          <div class="education__items--img stepic">
+            <img src="img/stepic sertificat.png" alt="" />
+          </div>
+          <a
+            href="https://stepik.org/cert/1422727"
+            class="education--link subtitle"
+            >stepik.org</a
+          >
         </div>
 
-        <!-- EDUCATION -->
-
-        <div class="education">
-            <div class="education__title title">
-                Education
-            </div>
-            <div class="education__items ">
-                <div class="education__items--img stepic">
-                    <img src="img/stepic sertificat.png" alt="">
-                </div>
-                <a href="" class="education--link subtitle">link education</a>
-            </div>
-
-            <div class="education__items">
-                <div class="education__items--img">
-                    <img src="img/freeCodeCamp responsiveWebDesign.png" alt="">
-                </div>
-                <a href="" class="education--link subtitle">link education</a>
-            </div>
-
+        <div class="education__items">
+          <div class="education__items--img">
+            <img src="img/freeCodeCamp responsiveWebDesign.png" alt="" />
+          </div>
+          <a
+            href="https://www.freecodecamp.org/certification/KarVarr/responsive-web-design"
+            class="education--link subtitle"
+            >freecodecamp.org</a
+          >
         </div>
+      </div>
 
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer__title title">
-                Contacts
-            </div>
-            <div class="footer__subtitle subtitle">
-                <p>Want to know more or just chat?</p>
-                <p>You are welcome!</p>
-            </div>
-            <div class="footer__btn">
-                <a href="mailto:">Send message</a>
-            </div>
-            <div class="footer__social subtitle">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-            </div>
-        </footer>
+      <!-- FOOTER -->
+      <footer class="footer" id="footer">
+        <div class="footer__title title">Contacts</div>
+        <div class="footer__subtitle subtitle">
+          <p>Want to know more or just chat?</p>
+          <p>You are welcome!</p>
+        </div>
+        <div class="footer__btn">
+          <a href="mailto:megatr9n@gmail.com">Send message</a>
+        </div>
+        <div class="footer__social subtitle">
+          <a href="https://www.instagram.com/karen_varr/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/WarKarWar"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://github.com/KarVarr"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="tel:+79999878713"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </footer>
 
-
-        <!-- END CONTAINER -->
+      <!-- END CONTAINER -->
     </div>
-
-
-
-
 
     <!-- JS -->
     <script src="main.js"></script>

@@ -17,26 +17,26 @@
     }
     .footer__btn {
         margin-bottom: $mb6;
-        transition: all .2s ease-in;
+        transition: all .2s ease;
         transform: translateY(0); 
+        padding: 2rem .4rem;
+        color: $color-section;
+        background-color: rgb(1, 136, 255);
+        border-radius: 10rem;
+        box-shadow: 0 5px 2px rgb(24, 106, 178);
+        &:hover {
+               background-color: rgb(55, 159, 250);
+            }       
         &:active {
-                transform: translateY(1px); 
+                transform: translateY(2px); 
                 //transform: scale(.99);
                 
+                box-shadow: 0 3px 2px rgb(24, 106, 178);
             }
-        a {
-            padding: 2rem 5rem;
-            font-size: 1.5rem;
-            color: $color-section;
-            background-color: rgb(1, 136, 255);
-            border-radius: 10rem;
-            box-shadow: 0 5px 2px rgb(24, 106, 178);
-            &:hover {
-               background-color: rgb(6, 116, 213);
-                
-            }
-            
-        }
+       a {
+        font-size: 2rem;
+        padding: 4rem 4rem;
+       }
     }
 
 

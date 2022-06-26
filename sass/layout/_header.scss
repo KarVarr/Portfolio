@@ -1,6 +1,6 @@
 .header {
      margin-bottom: $mb9;
-
+    
     .header__title {
         display: grid;
          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -25,9 +25,15 @@
     }
 
     .header__img{
-        max-width: $mw;
+        width: $mw;
+        img {
+            width: 94rem;
+            max-height: 38rem;
+
+        }
     }
     .switch--language {
+        margin-bottom: $mb3;
     }
     .switch--nightmod {
     }

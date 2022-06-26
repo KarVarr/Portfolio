@@ -1,6 +1,6 @@
 .nav {
         margin-bottom: $mb3;
-        
+        z-index: 10;
         .nav__ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -8,14 +8,37 @@
             padding: 3rem 0;
             border-bottom: 1px solid $color-nav;
         }
-        .nav__ul,  li{
+        .nav__ul{
             font-size: 1.8rem;
             color: $color-nav;
         }
-        .nav__ul li a{
+        .nav__ul  a{
             &:hover {
-                color: $color-text
+                color: $color-text;
+                cursor: pointer;
                 // color: rgb(215, 215, 215);
             }
         }
+
+
+        //-------js stiky nav
+
+        .stiky {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate( -50%);
+            background-color: rgba(255, 255, 255, 0.878);
+        }
+    }
+
+    .night {
+    //background-color: rgb(132, 43, 43);
+    background-color: rgb(1, 1, 1);
+    transition: all .4s ease-in;
+    }
+    .nightText {
+    color: rgb(48, 253, 2) !important;
+        
     }
