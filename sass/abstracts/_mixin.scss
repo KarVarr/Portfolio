@@ -1,0 +1,24 @@
+@mixin title {
+    font-size: 3.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: $color-text;
+    
+}
+
+@mixin text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: $color-text;
+}
+
+@mixin section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+@mixin marginSides {
+    margin-right: $mside;
+    margin-left: $mside;
+}

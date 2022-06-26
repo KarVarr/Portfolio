@@ -1,0 +1,25 @@
+.education {
+    @include section;
+    
+    .education__title {
+        margin-bottom: $mb3;
+    }
+    
+    .education__items {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .education__items--img {
+        max-width: $mw;
+        margin-bottom: $mb3;
+    }
+    .education--link {
+        margin-bottom: $mb6; 
+    }
+    
+    .stepic {
+        border: 1.2rem solid rgba(10,10,35,255);
+    }
+}

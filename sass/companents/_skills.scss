@@ -1,0 +1,34 @@
+.skills {
+    @include section;
+    
+    .skills__title {
+        margin-bottom: $mb3;
+    }
+    .skills__subtitle  {
+        margin-bottom: $mb9;
+    }
+    .skills__programs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        
+    }
+    .skills__programs--items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .item-img {
+        width: 9rem;
+        height: 9rem;
+        margin-bottom: 1rem;
+    }
+    .item-title {
+        margin-bottom: 1rem;
+    }
+    
+}

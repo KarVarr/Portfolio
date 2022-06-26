@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+ul,
+ol {
+    list-style: none;
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// если нет анимации у людей
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+//---------------------------------------------
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', monospace;
+    color: $color-text;
+    // color: rgb(211, 211, 211);
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 3rem 25rem;
+    background-color: rgb(255, 255, 255);
+    // background-color: rgb(132, 43, 43);
+}

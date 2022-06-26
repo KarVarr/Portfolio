@@ -1,0 +1,14 @@
+.aboutme {
+    @include section;
+    @include marginSides;
+    background-color: $color-section;
+   
+    
+}
+.aboutme__title {
+    margin-bottom: $mb3;
+}
+
+.aboutme__subtitle-1 {
+    margin-bottom: $mb3;
+}

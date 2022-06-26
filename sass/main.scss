@@ -1,12 +1,17 @@
+
+@import "abstracts/mixin";
 @import "abstracts/variables";
+
 
 @import "base/base";
 @import "base/text";
 
 @import "companents/about";
+@import "companents/education";
 @import "companents/portfolio";
 @import "companents/skills";
 
 @import "layout/footer";
 @import "layout/header";
-@import "layout/navigation";
+@import "layout/nav";
+  

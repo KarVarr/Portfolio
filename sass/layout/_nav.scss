@@ -1,0 +1,21 @@
+.nav {
+        margin-bottom: $mb3;
+        
+        .nav__ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            justify-items: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid $color-nav;
+        }
+        .nav__ul,  li{
+            font-size: 1.8rem;
+            color: $color-nav;
+        }
+        .nav__ul li a{
+            &:hover {
+                color: $color-text
+                // color: rgb(215, 215, 215);
+            }
+        }
+    }
