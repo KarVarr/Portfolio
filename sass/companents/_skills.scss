@@ -1,6 +1,6 @@
 .skills {
     @include section;
-    
+    transition: all .4s ease-in;
     .skills__title {
         margin-bottom: $mb3;
     }
@@ -13,6 +13,10 @@
         align-items: center;
         justify-content: center;
         margin: 1rem;
+        @media only screen and(max-width: 581px){
+            display: flex;
+            flex-direction: column;
+        }
         
     }
     .skills__programs--items {
@@ -20,15 +24,30 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        @media only screen and(max-width: 581px){
+            margin-bottom: $mb3;
+            
+        }
     }
     .item-img {
         width: 9rem;
         height: 9rem;
         margin-bottom: 1rem;
+        
+        @media only screen and(max-width: 581px){
+          width: 15rem;
+          height: 15rem;
+          margin-bottom: 2rem;
+            
+        }
     }
     .item-title {
+        font-size: 1.5rem;
         margin-bottom: 1rem;
+        @media only screen and(max-width: 581px){
+          font-size: 3rem;
+            
+        }
     }
     
 }

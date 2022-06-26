@@ -46,18 +46,43 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto Mono', monospace;
     color: $color-text;
+    @media only screen and(max-width: 1199px){
+        font-size: 58%;
+    }
+   @media only screen and(max-width: 991px){
+        font-size: 52%;
+    }
+    @media only screen and(max-width: 767px){
+        font-size: 50%;
+    }
    
 }
 
 .container {
     max-width: 144rem;
     margin: 0 auto;
-    padding: 3rem 25rem;
+    padding: 3rem 25rem 0;
     background-color: rgb(255, 255, 255);
+    @media only screen and(max-width: 1199px){
+        padding: 3rem 15rem 0;
+        
+    }
+    @media only screen and(max-width: 991px){
+        padding: 3rem 10rem 0;
+        
+    }
+    @media only screen and(max-width: 767px){
+        padding: 3rem 3rem 0;
+        
+    }
     
 }
 
- 
+.section--hidden {
+    opacity: 0;
+    transform:  translateY(10rem);
+    
+}
 
 ::selection {
     color: rgb(203, 1, 196);

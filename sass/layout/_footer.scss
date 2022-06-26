@@ -3,10 +3,24 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: $color-section;
-    margin-bottom: $mb6;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and(max-width: 1199px) {
+    margin-right: -15rem;
+    margin-left: -15rem;
+    padding: 5rem 10rem;
+  }
+  @media only screen and(max-width: 991px) {
+    margin-right: -10rem;
+    margin-left: -10rem;
+    padding: 5rem 10rem;
+  }
+  @media only screen and(max-width: 581px) {
+    margin-right: -3rem;
+    margin-left: -3rem;
+    padding: 5rem 1rem;
+  }
 
     .footer__title {
         margin-bottom: $mb3;

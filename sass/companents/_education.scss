@@ -1,6 +1,6 @@
 .education {
     @include section;
-    
+    transition: all .4s ease-in;
     .education__title {
         margin-bottom: $mb3;
     }

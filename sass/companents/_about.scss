@@ -1,14 +1,26 @@
 .aboutme {
-    @include section;
-    @include marginSides;
-    background-color: $color-section;
-   
-    
+  @include section;
+  @include marginSides;
+  background-color: $color-section;
+  transition: all 0.4s ease-in;
+  @media only screen and(max-width: 1199px) {
+    margin-right: -15rem;
+    margin-left: -15rem;
+  }
+  @media only screen and(max-width: 991px) {
+    margin-right: -10rem;
+    margin-left: -10rem;
+  }
+  @media only screen and(max-width: 581px) {
+    margin-right: -3rem;
+    margin-left: -3rem;
+    padding: 5rem 1rem;
+  }
 }
 .aboutme__title {
-    margin-bottom: $mb3;
+  margin-bottom: $mb3;
 }
 
 .aboutme__subtitle-1 {
-    margin-bottom: $mb3;
+  margin-bottom: $mb3;
 }
