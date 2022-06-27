@@ -1,30 +1,37 @@
 .education {
-    @include section;
-    transition: all .4s ease-in;
-    .education__title {
-        margin-bottom: $mb3;
-    }
-    
-    .education__items {
-        display: flex;
+  @include section;
+  transition: all 0.4s ease-in;
+  .education__title {
+    margin-bottom: $mb3;
+  }
+
+  .education__items {
+    display: flex;
     flex-direction: column;
     align-items: center;
     a:hover {
-                color: rgb(164, 164, 164);
-                
-                
-            }
-    
+      color: rgb(164, 164, 164);
     }
-    .education__items--img {
-        max-width: $mw;
-        margin-bottom: $mb3;
+  }
+  .education__items--img {
+    max-width: $mw;
+    margin-bottom: $mb3;
+  }
+  .education--link {
+    margin-bottom: $mb6;
+  }
+
+  .stepic {
+    border: 1.2rem solid rgba(10, 10, 35, 255);
+
+    @media only screen and(max-width: 991px) {
+      border: 1rem solid rgba(10, 10, 35, 255);
     }
-    .education--link {
-        margin-bottom: $mb6; 
+    @media only screen and(max-width: 767px) {
+      border: 0.8rem solid rgba(10, 10, 35, 255);
     }
-    
-    .stepic {
-        border: 1.2rem solid rgba(10,10,35,255);
+    @media only screen and(max-width: 581px) {
+      border: 0.6rem solid rgba(10, 10, 35, 255);
     }
+  }
 }

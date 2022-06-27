@@ -1,38 +1,36 @@
 .nav {
-        margin-bottom: $mb3;
-        z-index: 10;
-        .nav__ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-            justify-items: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid $color-nav;
-        }
-        .nav__ul{
-            font-size: 1.8rem;
-            color: $color-nav;
-        }
-        .nav__ul  a{
-            &:hover {
-                color: $color-text;
-                cursor: pointer;
-                // color: rgb(215, 215, 215);
-            }
-        }
-
-
-        //-------js stiky nav
-
-        .stiky {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 50%;
-            transform: translate( -50%);
-            background-color: rgba(255, 255, 255, 0.878);
-        }
+  margin-bottom: $mb3;
+  z-index: 10;
+  @media only screen and(max-width: 581px) {
+    display: none;
+  }
+  .nav__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__ul {
+    font-size: 1.8rem;
+    color: $color-nav;
+  }
+  .nav__ul a {
+    &:hover {
+      color: $color-text;
+      cursor: pointer;
+      // color: rgb(215, 215, 215);
     }
+  }
 
+  //-------js stiky nav
 
-
-    
+  .stiky {
+    width: 94rem;
+    max-width: 100%;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.878);
+  }
+}

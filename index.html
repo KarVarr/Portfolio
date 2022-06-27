@@ -28,7 +28,7 @@
       <header class="header">
         <!-- NAV -->
         <nav class="nav">
-          <div class="nav_items nav__ul">
+          <div class="nav_items nav__ul ">
             <a id="home">Home</a>
             <a id="about">About me</a>
             <a id="skills">Skills</a>
@@ -36,7 +36,9 @@
             <a id="education">Education</a>
             <a id="contacts">Contacts</a>
           </div>
+          
         </nav>
+
         <!-- TITLE -->
         <!-- name -->
         <div class="header__title">
@@ -56,11 +58,32 @@
                 <label for="toggle" class="button"></label>
             </div>
           </div>
+
+          <!-- burger menu -->
+          <div class="header__menu">
+            <input type="checkbox"  id="burger">
+        </input>
+        <label for="burger" class="header__menu--label">
+            <span class="header__menu--burger"></span>
+        </label>
+          </div>
+
+          <div class="nav__burger ">
+            <a id="homeMenu">Home</a>
+            <a id="aboutMenu">About me</a>
+            <a id="skillMenu">Skills</a>
+            <a id="portfolioMenu">Portfolio</a>
+            <a id="educationMenu">Education</a>
+            <a id="contactsMenu">Contacts</a>
+            
+          </div>
+
         </div>
         <!-- IMG -->
-        <div class="header__img">
+        <picture class="header__img">
+            <source media="(max-width: 581px)" srcset="img/BSPP2266mini.png">
           <img src="img/BSPP2266.png" alt="Photo" />
-        </div>
+        </picture>
       </header>
 
       <!-- ABOUT ME -->

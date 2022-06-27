@@ -1,34 +1,30 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 ul,
 ol {
-    list-style: none;
-} 
+  list-style: none;
+}
 
 a {
-    text-decoration: none;
-    color: inherit;
-    
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
-
-
 
 // если нет анимации у людей
 @media (prefers-reduced-motion: reduce) {
@@ -43,47 +39,44 @@ img {
 //---------------------------------------------
 
 html {
-    font-size: 62.5%;
-    font-family: 'Roboto Mono', monospace;
-    color: $color-text;
-    @media only screen and(max-width: 1199px){
-        font-size: 58%;
-    }
-   @media only screen and(max-width: 991px){
-        font-size: 52%;
-    }
-    @media only screen and(max-width: 767px){
-        font-size: 50%;
-    }
-   
+  font-size: 62.5%;
+  font-family: 'Roboto Mono', monospace;
+  color: $color-text;
+  @media only screen and(max-width: 1199px) {
+    font-size: 58%;
+  }
+  @media only screen and(max-width: 991px) {
+    font-size: 52%;
+  }
+  @media only screen and(max-width: 767px) {
+    font-size: 50%;
+  }
+  @media only screen and(max-width: 581px) {
+    font-size: 48%;
+  }
 }
 
 .container {
-    max-width: 144rem;
-    margin: 0 auto;
-    padding: 3rem 25rem 0;
-    background-color: rgb(255, 255, 255);
-    @media only screen and(max-width: 1199px){
-        padding: 3rem 15rem 0;
-        
-    }
-    @media only screen and(max-width: 991px){
-        padding: 3rem 10rem 0;
-        
-    }
-    @media only screen and(max-width: 767px){
-        padding: 3rem 3rem 0;
-        
-    }
-    
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 3rem 25rem 0;
+  background-color: rgb(255, 255, 255);
+  @media only screen and(max-width: 1199px) {
+    padding: 3rem 15rem 0;
+  }
+  @media only screen and(max-width: 991px) {
+    padding: 3rem 10rem 0;
+  }
+  @media only screen and(max-width: 767px) {
+    padding: 3rem 3rem 0;
+  }
 }
 
 .section--hidden {
-    opacity: 0;
-    transform:  translateY(10rem);
-    
+  opacity: 0;
+  transform: translateY(10rem);
 }
 
 ::selection {
-    color: rgb(203, 1, 196);
+  color: rgb(203, 1, 196);
 }
