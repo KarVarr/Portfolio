@@ -377,14 +377,17 @@ html {
   color: #F6F6F6;
   background-color: rgb(1, 136, 255);
   border-radius: 10rem;
-  box-shadow: 0 5px 2px rgb(24, 106, 178);
+  box-shadow: 0 5px 1px rgb(24, 106, 178);
+  transform: scale(1);
 }
 .footer .footer__btn:hover {
   background-color: rgb(55, 159, 250);
+  box-shadow: 0 5px 2px rgb(12, 31, 48);
+  transform: scale(0.99);
 }
 .footer .footer__btn:active {
   transform: translateY(2px);
-  box-shadow: 0 3px 2px rgb(24, 106, 178);
+  box-shadow: 0 3px 0.6px rgb(24, 106, 178);
 }
 .footer .footer__btn a {
   font-size: 2rem;

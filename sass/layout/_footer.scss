@@ -37,15 +37,18 @@
         color: $color-section;
         background-color: rgb(1, 136, 255);
         border-radius: 10rem;
-        box-shadow: 0 5px 2px rgb(24, 106, 178);
+        box-shadow: 0 5px 1px rgb(24, 106, 178);
+        transform: scale(1);
         &:hover {
                background-color: rgb(55, 159, 250);
+               box-shadow: 0 5px 2px rgb(12, 31, 48);
+               transform: scale(0.99);
             }       
         &:active {
                 transform: translateY(2px); 
                 //transform: scale(.99);
                 
-                box-shadow: 0 3px 2px rgb(24, 106, 178);
+                box-shadow: 0 3px .6px rgb(24, 106, 178);
             }
        a {
         font-size: 2rem;
