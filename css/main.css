@@ -557,7 +557,7 @@ html {
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Press Start 2P", cursive;
-  color: #203A43;
+  color: #203a43;
 }
 
 body.lock {
@@ -575,6 +575,19 @@ body.lock {
 
 .nightText {
   color: rgb(48, 253, 2) !important;
+}
+
+.switch--language > a {
+  font-weight: 900;
+}
+
+#ru:hover {
+  color: #fff;
+  background: linear-gradient(180deg, #ffffff, #0033ff, #ff0000);
+}
+
+#eng:hover {
+  background: linear-gradient(360deg, #ffffff, #ffffff, #ff0000);
 }
 
 .nav {
