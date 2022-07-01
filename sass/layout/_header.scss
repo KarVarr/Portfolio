@@ -23,6 +23,9 @@
   }
   .header__title--subtitle {
     margin-bottom: 1rem;
+    @media only screen and(max-width: 581px) {
+      text-align: left;
+    }
   }
   .header__title--switch {
     justify-self: end;

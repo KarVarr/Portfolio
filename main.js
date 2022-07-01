@@ -96,22 +96,22 @@ toggleDayNight.addEventListener('click', () => {
 //   else nav.classList.remove('stiky');
 // });
 
-const stickyNav = function (entries) {
-  const [entry] = entries;
-  console.log(entry);
+// const stickyNav = function (entries) {
+//   const [entry] = entries;
+//   console.log(entry);
 
-  if (!entry.isIntersecting) {
-    nav.classList.add('stiky');
-  } else nav.classList.remove('stiky');
-};
+//   if (!entry.isIntersecting) {
+//     nav.classList.add('stiky');
+//   } else nav.classList.remove('stiky');
+// };
 
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  //rootMargin: '-90px'
-});
+// const headerObserver = new IntersectionObserver(stickyNav, {
+//   root: null,
+//   threshold: 0,
+//   //rootMargin: '-90px'
+// });
 
-headerObserver.observe(header);
+// headerObserver.observe(header);
 
 //Reveal section--------------
 

@@ -26,15 +26,6 @@ img {
   display: block;
 }
 
-// если нет анимации у людей
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 
 //---------------------------------------------
 
@@ -79,4 +70,5 @@ html {
 
 ::selection {
   color: rgb(203, 1, 196);
+  background-color: rgba(182, 187, 243, 0.838);
 }

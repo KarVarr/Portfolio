@@ -27,16 +27,6 @@ img {
   display: block;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 html {
   font-size: 62.5%;
   font-family: "Roboto Mono", monospace;
@@ -92,10 +82,12 @@ html {
 
 ::-moz-selection {
   color: rgb(203, 1, 196);
+  background-color: rgba(182, 187, 243, 0.838);
 }
 
 ::selection {
   color: rgb(203, 1, 196);
+  background-color: rgba(182, 187, 243, 0.838);
 }
 
 .title {
@@ -313,8 +305,8 @@ html {
   content: url("../img/sun.png");
   width: 4rem;
   height: 4rem;
-  background-color: #dfd854;
-  border: 2px solid #fff;
+  background-color: transparent;
+  border: 2px solid transparent;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   position: absolute;
@@ -433,6 +425,11 @@ html {
 }
 .header .header__title--subtitle {
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 581px) {
+  .header .header__title--subtitle {
+    text-align: left;
+  }
 }
 .header .header__title--switch {
   justify-self: end;
