@@ -35,12 +35,16 @@
   .switch--language {
     margin-bottom: $mb3;
     @media only screen and(max-width: 581px) {
-      display: none;
+      position: absolute;
+      top: 7rem;
+      right: 1rem;
     }
   }
   .switch--nightmod {
     @media only screen and(max-width: 581px) {
-      display: none;
+      position: absolute;
+      top: 12rem;
+      right: 1rem;
     }
   }
 
@@ -60,11 +64,13 @@
 
     .header__menu--label {
       display: inline-block;
-      width: 5rem;
-      height: 2.5rem;
-      background-color: transparent;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      background-color: rgb(16, 148, 155);
+      box-shadow: 0 0.5rem 1rem rgba(111, 111, 111, 0.643);
       position: fixed;
-      top: 4rem;
+      top: 3rem;
       right: 3rem;
       cursor: pointer;
       &:hover {
@@ -76,18 +82,18 @@
   //span burger ---------------
   .header__menu--burger {
     width: 5rem;
-    height: 0.5rem;
-    background-color: $color-nav;
+    height: 0.3rem;
+    background-color: $color-text;
     position: absolute;
-    top: 1rem;
-    right: 0rem;
+    top: 3.2rem;
+    right: 1rem;
     cursor: pointer;
     &::after,
     &::before {
       content: '';
       width: 5rem;
-      height: 0.5rem;
-      background-color: $color-nav;
+      height: 0.3rem;
+      background-color: $color-text;
       position: absolute;
       transition: all 0.2s ease-out;
     }
@@ -116,57 +122,16 @@
 
 //-----------burger menu nav-----
 
-.nav__burger {
-  display: none;
-  a {
-    cursor: pointer;
-    &:hover {
-      font-size: 5rem;
-    }
-  }
-  @media only screen and(min-width: 581px ) {
-    display: none;
-  }
-}
-.activeBurgerMenu {
-  position: fixed;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ef32d9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #89fffd,
-    #ef32d9
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #89fffd,
-    #ef32d9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  font-size: 4rem;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  a {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Press Start 2P', cursive;
-    color: #203a43;
-  }
+.nav_items.activeBurgerMenu {
+  left: 0 !important;
+  
 }
 
 body.lock {
   overflow: hidden;
 }
-.nav__burger.activeBurgerMenu {
-  top: 0;
-}
+
 
 //--------night mod--------
 

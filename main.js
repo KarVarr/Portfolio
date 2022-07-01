@@ -29,7 +29,7 @@ const toggleDayNight = document.querySelector('#toggle');
 const allSection = document.querySelectorAll('section');
 
 const btnBurger = document.querySelector('#burger');
-const navBurger = document.querySelector('.nav__burger');
+const navBurger = document.querySelector('.activeBurgerMenu ');
 const bodyLock = document.body;
 
 //scroll-------
@@ -135,56 +135,62 @@ allSection.forEach(section => {
 
 //BURGER NAV
 
+// btnBurger.addEventListener('click', () => {
+//   if (btnBurger.checked) {
+//     navBurger.classList.add('activeBurgerMenu');
+//     bodyLock.classList.add('lock');
+//   } else {
+//     navBurger.classList.remove('activeBurgerMenu');
+//     bodyLock.classList.remove('lock');
+//   }
+// });
+
 btnBurger.addEventListener('click', () => {
-  if (btnBurger.checked) {
-    navBurger.classList.add('activeBurgerMenu');
-    bodyLock.classList.add('lock');
-  } else {
-    navBurger.classList.remove('activeBurgerMenu');
-    bodyLock.classList.remove('lock');
-  }
+  nav.classList.toggle('activeBurgerMenu')
+  bodyLock.classList.toggle('lock');
 });
 
 //navigationChecked
 
-homeMenu.addEventListener('click', () => {
+
+home.addEventListener('click', () => {
   btnBurger.checked = false;
-  navBurger.classList.remove('activeBurgerMenu');
+  nav.classList.remove('activeBurgerMenu');
   bodyLock.classList.remove('lock');
   window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
 });
 
-aboutMenu.addEventListener('click', () => {
+about.addEventListener('click', () => {
   btnBurger.checked = false;
-  navBurger.classList.remove('activeBurgerMenu');
+  nav.classList.remove('activeBurgerMenu');
   bodyLock.classList.remove('lock');
   aboutSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-skillMenu.addEventListener('click', () => {
+skills.addEventListener('click', () => {
   btnBurger.checked = false;
-  navBurger.classList.remove('activeBurgerMenu');
+  nav.classList.remove('activeBurgerMenu');
   bodyLock.classList.remove('lock');
   skillsSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-portfolioMenu.addEventListener('click', () => {
+portfolio.addEventListener('click', () => {
   btnBurger.checked = false;
-  navBurger.classList.remove('activeBurgerMenu');
+  nav.classList.remove('activeBurgerMenu');
   bodyLock.classList.remove('lock');
   portfolioSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-educationMenu.addEventListener('click', () => {
+education.addEventListener('click', () => {
   btnBurger.checked = false;
-  navBurger.classList.remove('activeBurgerMenu');
+  nav.classList.remove('activeBurgerMenu');
   bodyLock.classList.remove('lock');
   educationSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-contactsMenu.addEventListener('click', () => {
+contacts.addEventListener('click', () => {
   btnBurger.checked = false;
-  navBurger.classList.remove('activeBurgerMenu');
+  nav.classList.remove('activeBurgerMenu');
   bodyLock.classList.remove('lock');
   footer.scrollIntoView({ behavior: 'smooth' });
 });
