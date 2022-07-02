@@ -17,6 +17,7 @@ const educationMenu = document.querySelector('#educationMenu');
 const contactsMenu = document.querySelector('#contactsMenu');
 
 //section All
+const headerSection = document.querySelector('.header');
 const aboutSection = document.querySelector('.aboutme');
 const skillsSection = document.querySelector('.skills');
 const portfolioSection = document.querySelector('.portfolio');
@@ -34,29 +35,19 @@ const bodyLock = document.body;
 
 //scroll-------
 
-home.addEventListener('click', () => {
-  window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
-});
+const scrollTo = scr => scr.scrollIntoView({ behavior: 'smooth' });
 
-about.addEventListener('click', () => {
-  aboutSection.scrollIntoView({ behavior: 'smooth' });
-});
+home.addEventListener('click', scrollTo(headerSection));
 
-skills.addEventListener('click', () => {
-  skillsSection.scrollIntoView({ behavior: 'smooth' });
-});
+about.addEventListener('click', scrollTo(aboutSection));
 
-portfolio.addEventListener('click', () => {
-  portfolioSection.scrollIntoView({ behavior: 'smooth' });
-});
+skills.addEventListener('click', scrollTo(skillsSection));
 
-education.addEventListener('click', () => {
-  educationSection.scrollIntoView({ behavior: 'smooth' });
-});
+portfolio.addEventListener('click', scrollTo(portfolioSection));
 
-contacts.addEventListener('click', () => {
-  footer.scrollIntoView({ behavior: 'smooth' });
-});
+education.addEventListener('click', scrollTo(educationSection));
+
+contacts.addEventListener('click', scrollTo(footer));
 
 //toggle
 
@@ -152,6 +143,13 @@ btnBurger.addEventListener('click', () => {
 
 //navigationChecked
 
+// function change (content) {
+//   btnBurger.checked = false;
+//   nav.classList.remove('activeBurgerMenu');
+//   bodyLock.classList.remove('lock');
+//   content.scrollIntoView({ behavior: 'smooth' });
+  
+// }
 
 home.addEventListener('click', () => {
   btnBurger.checked = false;

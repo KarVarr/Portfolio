@@ -311,11 +311,23 @@ html {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), -2px -2px -5px rgba(0, 0, 0, 0.25);
   position: absolute;
   top: 2px;
-  left: 3px;
+  left: 3.5px;
   display: grid;
   place-content: center;
   line-height: 0;
   transition: background-color 0.3s, transform 0.3s ease-in;
+}
+@media only screen and (max-width: 991px) {
+  .button::after {
+    top: 1.7px;
+    left: 3px;
+  }
+}
+@media only screen and (max-width: 581px) {
+  .button::after {
+    top: 1.3px;
+    left: 3px;
+  }
 }
 
 #toggle:checked + .button::after {
