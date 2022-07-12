@@ -99,7 +99,7 @@ toggleDayNight.addEventListener('click', () => {
 // const headerObserver = new IntersectionObserver(stickyNav, {
 //   root: null,
 //   threshold: 0,
-//   //rootMargin: '-90px'
+//   rootMargin: '-90px'
 // });
 
 // headerObserver.observe(header);
