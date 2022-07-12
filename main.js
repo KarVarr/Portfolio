@@ -35,22 +35,22 @@ const bodyLock = document.body;
 
 //scroll-------
 
-const scrollTo = scr => scr.scrollIntoView({ behavior: 'smooth' });
+// const scrollTo = scr => scr.scrollIntoView({ behavior: 'smooth' });
 
-home.addEventListener('click', scrollTo(headerSection));
+// home.addEventListener('click', scrollTo(headerSection));
 
-about.addEventListener('click', scrollTo(aboutSection));
+// about.addEventListener('click', scrollTo(aboutSection));
 
-skills.addEventListener('click', scrollTo(skillsSection));
+// skills.addEventListener('click', scrollTo(skillsSection));
 
-portfolio.addEventListener('click', scrollTo(portfolioSection));
+// portfolio.addEventListener('click', scrollTo(portfolioSection));
 
-education.addEventListener('click', scrollTo(educationSection));
+// education.addEventListener('click', scrollTo(educationSection));
 
-contacts.addEventListener('click', scrollTo(footer));
+// contacts.addEventListener('click', scrollTo(footer));
 
 //toggle
-
+//==================
 toggleDayNight.addEventListener('click', () => {
   if (toggleDayNight.checked) {
     container.classList.toggle('night');
@@ -73,8 +73,8 @@ toggleDayNight.addEventListener('click', () => {
     footer.classList.remove('night');
     footer.classList.remove('nightText');
   }
-});
-
+})
+//=================
 //sticky nav------
 
 // const initialCoords = aboutSection.getBoundingClientRect();
@@ -135,12 +135,12 @@ allSection.forEach(section => {
 //     bodyLock.classList.remove('lock');
 //   }
 // });
-
+//=====================
 btnBurger.addEventListener('click', () => {
   nav.classList.toggle('activeBurgerMenu')
   bodyLock.classList.toggle('lock');
 });
-
+//=================
 //navigationChecked
 
 // function change (content) {
@@ -150,7 +150,7 @@ btnBurger.addEventListener('click', () => {
 //   content.scrollIntoView({ behavior: 'smooth' });
   
 // }
-
+//===========================
 home.addEventListener('click', () => {
   btnBurger.checked = false;
   nav.classList.remove('activeBurgerMenu');
