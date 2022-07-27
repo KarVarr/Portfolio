@@ -26,7 +26,7 @@
     @media only screen and(max-width: 581px) {
       text-align: left;
     }
-  } 
+  }
   .header__title--switch {
     justify-self: end;
     margin-bottom: 1rem;
@@ -125,16 +125,13 @@
 
 //-----------burger menu nav-----
 
-
 .nav_items.activeBurgerMenu {
   left: 0 !important;
-  
 }
 
 body.lock {
   overflow: hidden;
 }
-
 
 //--------night mod--------
 
@@ -152,10 +149,18 @@ body.lock {
 }
 #ru:hover {
   color: #fff;
-  background: -webkit-linear-gradient(180deg, #ffffff 0%, #ffffff 33%, #0033ff 33% , #0033ff 66%, #ff0000 66%, #ff0000 100%);
+  background: -webkit-linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 33%,
+    #0033ff 33%,
+    #0033ff 66%,
+    #ff0000 66%,
+    #ff0000 100%
+  );
   background: linear-gradient(180deg, #ffffff, #0033ff, #ff0000);
 }
 #eng:hover {
-  background: -webkit-linear-gradient(360deg, #ffffff , #ff0000 );
-  background: linear-gradient(360deg, #ffffff , #ffffff , #ff0000);
+  background: -webkit-linear-gradient(360deg, #ffffff, #ff0000);
+  background: linear-gradient(360deg, #ffffff, #ffffff, #ff0000);
 }

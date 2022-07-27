@@ -6,6 +6,10 @@
   width: 6rem;
   height: 3.5rem;
   background: #e0e0e0;
+  background-image: url('../../img/hang-lamp.png');
+  background-repeat: no-repeat;
+  background-size: 3rem 2.5rem;
+  background-position: right;
   border-radius: 5rem;
   position: relative;
   cursor: pointer;
@@ -28,14 +32,6 @@
   line-height: 0;
   -webkit-transition: background-color 0.3s, transform 0.3s ease-in;
   transition: background-color 0.3s, transform 0.3s ease-in;
-  // @media only screen and(max-width: 991px) {
-  //   top: 6.5%;
-  //   left: 6%;
-  // }
-  // @media only screen and(max-width: 581px) {
-  //   top: 6.5%;
-  //   left: 6%;
-  // }
 }
 
 #toggle:checked + .button::after {

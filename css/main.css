@@ -295,6 +295,10 @@ html {
   width: 6rem;
   height: 3.5rem;
   background: #e0e0e0;
+  background-image: url("../../img/hang-lamp.png");
+  background-repeat: no-repeat;
+  background-size: 3rem 2.5rem;
+  background-position: right;
   border-radius: 5rem;
   position: relative;
   cursor: pointer;

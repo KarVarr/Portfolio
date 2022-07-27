@@ -1,9 +1,9 @@
 .portfolio {
-    @include section;
-    @include marginSides;
-    background-color: $color-section;
-    transition: all .4s ease-in;
-    @media only screen and(max-width: 1199px) {
+  @include section;
+  @include marginSides;
+  background-color: $color-section;
+  transition: all 0.4s ease-in;
+  @media only screen and(max-width: 1199px) {
     margin-right: -15rem;
     margin-left: -15rem;
     padding: 5rem 10rem;
@@ -20,18 +20,18 @@
   }
 }
 .portfolio__title {
-    margin-bottom: $mb3;
+  margin-bottom: $mb3;
 }
 
 .portfolio__items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio__items--img {
-    max-width: $mw;
-    margin-bottom: $mb3;
+  max-width: $mw;
+  margin-bottom: $mb3;
 }
 .portfolio--link {
-    margin-bottom: $mb6;
+  margin-bottom: $mb6;
 }
