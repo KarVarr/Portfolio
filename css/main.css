@@ -143,6 +143,12 @@ html {
   padding-bottom: 10rem;
   transition: all 0.4s ease-in;
 }
+@media only screen and (max-width: 581px) {
+  .education {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
 .education .education__title {
   margin-bottom: 3rem;
 }
@@ -233,6 +239,12 @@ html {
   padding-top: 10rem;
   padding-bottom: 10rem;
   transition: all 0.4s ease-in;
+}
+@media only screen and (max-width: 581px) {
+  .skills {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 .skills .skills__title {
   margin-bottom: 3rem;

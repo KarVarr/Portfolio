@@ -55,7 +55,7 @@
   .header__menu {
     display: inline-block;
     z-index: 10;
-    
+
     input {
       display: none;
     }
@@ -78,6 +78,7 @@
       right: 3rem;
       cursor: pointer;
       &:hover {
+        -webkit-transform: scale(1.1);
         transform: scale(1.1);
       }
     }
@@ -99,8 +100,8 @@
       height: 0.3rem;
       background-color: $color-text;
       position: absolute;
-      -webkit-transition: all .7s ease-out;
-      transition: all .7s ease-out;
+      -webkit-transition: all 0.7s ease-out;
+      transition: all 0.7s ease-out;
     }
     &::before {
       content: '';
@@ -140,6 +141,7 @@ body.lock {
 .night {
   //background-color: rgb(132, 43, 43);
   background-color: rgb(1, 1, 1) !important;
+  -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in !important;
 }
 .nightText {
