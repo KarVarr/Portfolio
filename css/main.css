@@ -235,6 +235,10 @@ html {
   margin-bottom: 6rem;
 }
 
+#todo {
+  width: 70%;
+}
+
 .skills {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -460,14 +464,15 @@ html {
 @media only screen and (max-width: 581px) {
   .header .switch--language {
     position: absolute;
-    top: 7rem;
+    top: 40%;
     right: 1rem;
   }
 }
 @media only screen and (max-width: 581px) {
   .header .switch--nightmod {
     position: absolute;
-    top: 12.5rem;
+    -webkit-top: 12.5rem;
+    top: 70%;
     right: 1rem;
   }
 }

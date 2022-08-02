@@ -39,14 +39,15 @@
     margin-bottom: $mb3;
     @media only screen and(max-width: 581px) {
       position: absolute;
-      top: 7rem;
+      top: 40%; //for safari Apple
       right: 1rem;
     }
   }
   .switch--nightmod {
     @media only screen and(max-width: 581px) {
       position: absolute;
-      top: 12.5rem;
+      -webkit-top: 12.5rem;
+      top: 70%; //for safari Apple
       right: 1rem;
     }
   }
