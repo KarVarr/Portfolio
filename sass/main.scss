@@ -1,18 +1,15 @@
+@import 'abstracts/mixin';
+@import 'abstracts/variables';
 
-@import "abstracts/mixin";
-@import "abstracts/variables";
+@import 'base/base';
+@import 'base/text';
 
+@import 'companents/about';
+@import 'companents/education';
+@import 'companents/portfolio';
+@import 'companents/skills';
+@import 'companents/toggle';
 
-@import "base/base";
-@import "base/text";
-
-@import "companents/about";
-@import "companents/education";
-@import "companents/portfolio";
-@import "companents/skills";
-@import "companents/toggle";
-
-@import "layout/footer";
-@import "layout/header";
-@import "layout/nav";
-  
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/nav';

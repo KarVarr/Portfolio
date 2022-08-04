@@ -1,3 +1,8 @@
+'use strict';
+/*
+Bсе закоментированные строки кода нужны для разбора  свох ошибок
+в будущем!
+*/
 const home = document.querySelector('#home');
 const about = document.querySelector('#about');
 const skills = document.querySelector('#skills');
@@ -73,7 +78,7 @@ toggleDayNight.addEventListener('click', () => {
     footer.classList.remove('night');
     footer.classList.remove('nightText');
   }
-})
+});
 //=================
 //sticky nav------
 
@@ -116,7 +121,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.10,
+  threshold: 0.1,
 });
 
 allSection.forEach(section => {
@@ -137,7 +142,7 @@ allSection.forEach(section => {
 // });
 //=====================
 btnBurger.addEventListener('click', () => {
-  nav.classList.toggle('activeBurgerMenu')
+  nav.classList.toggle('activeBurgerMenu');
   bodyLock.classList.toggle('lock');
 });
 //=================
@@ -148,7 +153,7 @@ btnBurger.addEventListener('click', () => {
 //   nav.classList.remove('activeBurgerMenu');
 //   bodyLock.classList.remove('lock');
 //   content.scrollIntoView({ behavior: 'smooth' });
-  
+
 // }
 //===========================
 home.addEventListener('click', () => {

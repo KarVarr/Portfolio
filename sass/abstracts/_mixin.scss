@@ -1,22 +1,22 @@
 @mixin title {
-    font-size: 3.4rem;
-    font-weight: 700;
-    text-align: center;
-    //font-family: 'Roboto';
+  font-size: 3.4rem;
+  font-weight: 700;
+  text-align: center;
+  //font-family: 'Roboto';
 }
 
 @mixin text {
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 @mixin section {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 @mixin marginSides {
-    margin-right: $mside;
-    margin-left: $mside;
+  margin-right: $mside;
+  margin-left: $mside;
 }

@@ -3,15 +3,29 @@
 
   .header__title {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin-bottom: $mb3;
     @media only screen and(max-width: 581px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align-last: left;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -moz-text-align-last: left;
+           text-align-last: left;
       margin-bottom: 1rem;
     }
   }
@@ -73,14 +87,16 @@
       height: 7rem;
       border-radius: 50%;
       background-color: rgb(16, 148, 155);
-      box-shadow: 0 0.5rem 1rem rgba(111, 111, 111, 0.643);
+      -webkit-box-shadow: 0 0.5rem 1rem rgba(111, 111, 111, 0.643);
+              box-shadow: 0 0.5rem 1rem rgba(111, 111, 111, 0.643);
       position: fixed;
       top: 3rem;
       right: 3rem;
       cursor: pointer;
       &:hover {
         -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
       }
     }
   }
@@ -102,6 +118,7 @@
       background-color: $color-text;
       position: absolute;
       -webkit-transition: all 0.7s ease-out;
+      -o-transition: all 0.7s ease-out;
       transition: all 0.7s ease-out;
     }
     &::before {
@@ -119,11 +136,15 @@
   }
   #burger:checked + .header__menu--label > .header__menu--burger::after {
     top: 0;
-    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
   }
   #burger:checked + .header__menu--label > .header__menu--burger::before {
     top: 0;
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
   }
 }
 
@@ -143,6 +164,7 @@ body.lock {
   //background-color: rgb(132, 43, 43);
   background-color: rgb(1, 1, 1) !important;
   -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in !important;
   transition: all 0.4s ease-in !important;
 }
 .nightText {
@@ -154,18 +176,12 @@ body.lock {
 }
 #ru:hover {
   color: #fff;
-  background: -webkit-linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #ffffff 33%,
-    #0033ff 33%,
-    #0033ff 66%,
-    #ff0000 66%,
-    #ff0000 100%
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#0033ff), to(#ff0000));
+  background: -o-linear-gradient(top, #ffffff, #0033ff, #ff0000);
   background: linear-gradient(180deg, #ffffff, #0033ff, #ff0000);
 }
 #eng:hover {
-  background: -webkit-linear-gradient(360deg, #ffffff, #ff0000);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(#ffffff), to(#ff0000));
+  background: -o-linear-gradient(bottom, #ffffff, #ffffff, #ff0000);
   background: linear-gradient(360deg, #ffffff, #ffffff, #ff0000);
 }
